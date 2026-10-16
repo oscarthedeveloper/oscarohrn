@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Oscar Öhrn — en samling webbprojekt och idéerna bakom dem.">
   <title>Oscar Öhrn</title>
+  <link rel="stylesheet" href="/vendor/lenis/lenis.css">
   <style>
     :root { color-scheme: light; --ink: #111; --paper: #fff; --yellow: #fff36a; }
     *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; scroll-padding-top: 32px; }
+    html { scroll-behavior: auto; scroll-padding-top: 32px; }
     body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Courier New", Courier, monospace; font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; }
     ::selection { background: var(--yellow); color: var(--ink); }
     a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 5px; }
@@ -90,6 +91,7 @@
   <div id="login" hidden></div>
   <div id="notice" role="status" hidden></div>
   <div id="site"></div>
+  <script type="module" src="/scroll.js"></script>
   <script src="/config.js"></script>
   <script type="module" src="/app.js"></script>
 </body>

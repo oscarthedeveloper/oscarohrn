@@ -1,6 +1,6 @@
 # Oscar Öhrn — installation
 
-Webbplatsen består av index.html, app.js, config.js och admin/index.html. Ingen byggprocess behövs. Lägg filerna på en webbserver som stödjer index.html i mappar. /admin kan omdirigeras till /admin/; båda aktiverar redigeringsläget. HTML-filerna är identiska och delar app.js.
+Webbplatsen består av index.html, app.js, config.js, scroll.js, vendor/ och admin/index.html. Ingen byggprocess behövs. Lägg filerna på en webbserver som stödjer index.html i mappar. /admin kan omdirigeras till /admin/; båda aktiverar redigeringsläget. HTML-filerna är identiska och delar app.js.
 
 ## Supabase
 
@@ -22,7 +22,7 @@ Utan Supabase-inställningar är /admin ett tydligt märkt demoläge. Demo spara
 
 ## Domän och webbhotell
 
-Ladda upp index.html, app.js, config.js och admin/index.html till webbhotellets publika rot. Koppla oscarohrn.com enligt webbhotellets DNS-anvisningar och aktivera HTTPS. Supabase lagrar innehåll och sköter inloggning; det är inte webbhotellet för HTML-filerna. Supabase-projekt och DNS är ännu inte konfigurerade.
+Ladda upp index.html, app.js, config.js, scroll.js, vendor/ och admin/index.html till webbhotellets publika rot. Koppla oscarohrn.com enligt webbhotellets DNS-anvisningar och aktivera HTTPS. Supabase lagrar innehåll och sköter inloggning; det är inte webbhotellet för HTML-filerna. Supabase-projekt och DNS är ännu inte konfigurerade.
 
 ## Lokal förhandsvisning
 
@@ -35,3 +35,7 @@ All redigerad text visas som text, inte som HTML. Länkar tillåter endast http/
 Efter installation: kontrollera sparande med ditt administratörskonto, omladdning av den publika sidan, samt att ett konto utanför site_admins inte kan uppdatera innehållet. Live-inloggning och databasbehörigheter kan inte verifieras innan Supabase-projektet finns.
 
 Supabase-dokumentation: https://supabase.com/docs/guides/database/postgres/row-level-security
+
+## Mjuk skrollning
+
+Lenis 1.3.26 ligger lokalt i vendor/lenis/ (MIT-licens inkluderad) och startas av scroll.js. Ladda upp även scroll.js och hela vendor-mappen. Ankarlänkar och inställningen för minskad rörelse stöds. Ingen byggprocess eller extern CDN behövs för Lenis.
