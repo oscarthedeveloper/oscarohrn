@@ -39,3 +39,5 @@ Supabase-dokumentation: https://supabase.com/docs/guides/database/postgres/row-l
 ## Mjuk skrollning
 
 Lenis 1.3.26 ligger lokalt i vendor/lenis/ (MIT-licens inkluderad) och startas av scroll.js. Ladda upp även scroll.js och hela vendor-mappen. Ankarlänkar och inställningen för minskad rörelse stöds. Ingen byggprocess eller extern CDN behövs för Lenis.
+
+Flikikonen finns i ohrn.svg (originalet öhrn.svg). Ladda upp den i webbplatsens rot tillsammans med HTML-filerna.
